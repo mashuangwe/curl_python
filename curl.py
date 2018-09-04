@@ -25,16 +25,9 @@ start = time.time()
 response = []
 with open('query.txt', 'r', encoding='utf-8') as f:
     line = f.readline()
-    # i = 0
     while line:
-        # response.append(curl())
-        # if i == 10:
-        #     response += curl()
-        #     data['sentences'] = []
-        #     i = 0
         data['sentences'].append(line)
         line = f.readline()
-        # i += 1
 
 response = curl()
 span = time.time() - start
@@ -43,11 +36,6 @@ print(response)
 with open('segResult.txt', 'w', encoding='utf-8') as f:
     for r in response:
         f.write(r + '\n')
-
-
-
-# if __name__ == '__main__':
-#     main()
 
 
 
