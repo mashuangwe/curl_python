@@ -49,22 +49,6 @@ def curl():
 curl()
 
 
-# app_id=2108095633&nonce_str=0l82w4dxv1icpaof5tks&question=%E5%BA%8A%E5%89%8D%E6%98%8E%E6%9C%88%E5%85%89&session=10000&time_stamp=1535541160&app_key=YjC8YiifM7f3ysvJ
-# app_id=2108095633&nonce_str=0l82w4dxv1icpaof5tks&question=%E5%BA%8A%E5%89%8D%E6%98%8E%E6%9C%88%E5%85%89&session=10000&time_stamp=1535541160&app_key=YjC8YiifM7f3ysvJ
-#
-# 2C40414714955A32D7DD727CC2F10BB4
-# 2C40414714955A32D7DD727CC2F10BB4
-
-# {"app_id":"2108095633","nonce_str":"0l82w4dxv1icpaof5tks","question":"床前明月光","session":"10000","time_stamp":"1535556835","sign":"801A4F486F96E5181B3143D8BB01CBFC"}
-# {'time_stamp': '1535555810', 'question': '床前明月光', 'app_id': 2108095633, 'nonce_str': '0l82w4dxv1icpaof5tks', 'session': '10000', 'sign': 'CF0125E537974355112259D986EC3165'}
-# {"app_id":"2108095633","nonce_str":"0l82w4dxv1icpaof5tks","question":"床前明月光","session":"10000","time_stamp":"1535555810",       "sign": "CF0125E537974355112259D986EC3165"}
-#
-#
-# %E5%BA%8A%E5%89%8D%E6%98%8E%E6%9C%88%E5%85%89
-# %E5%BA%8A%E5%89%8D%E6%98%8E%E6%9C%88%E5%85%89
-
-
-
 
 
 
