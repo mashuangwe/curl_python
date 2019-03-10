@@ -11,15 +11,12 @@ for i in range(26):
 for i in range(10):
     alphabet.append(str(i))
 
-print(alphabet)
-# print(''.join(random.sample(alphabet, 20)))
-
 params = {
     'app_id': 2108095633,
     'session': '10000',
     'time_stamp': str(int(time.time())),
-    'question': '床前明月光',
-    'nonce_str': '0l82w4dxv1icpaof5tks', # ''.join(random.sample(alphabet, 20)),
+    'question': '欧洲',
+    'nonce_str': ''.join(random.sample(alphabet, 20)),
     'sign': ''
 }
 

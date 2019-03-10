@@ -3,8 +3,6 @@ import requests
 import time
 import threading
 
-requests
-
 headers = {
     'Content-type': 'application/json'
 }
@@ -12,7 +10,7 @@ headers = {
 data = {
     'segOrPos': 'seg',
     'useDict': 'yes',
-    'sentences': ['今天天气真好，心情也很好！']
+    'sentences': ['今天天气真好', '带着理想前进', '开水房在哪']
 }
 
 # start_time = time.time()
@@ -23,22 +21,12 @@ data = {
 
 def curl():
     start_time = time.time()
-    response = requests.post(url='http://xxx.xxx.xxx.xxx:xxxx/segPos', headers=headers, json=data)
+    response = requests.post(url='http://172.16.31.1:30380/segPos', headers=headers, json=data)
     time_gap = time.time() - start_time
+    print(response.text)
     print('thread %s use time %f s' %(threading.current_thread(), time_gap))
     # print(response.text)
 
-def main():
-    threads = []
-    for i in range(10):
-        threads.append(threading.Thread(target=curl))
-
-    for thread in threads:
-        thread.start()
-
-    for thread in threads:
-        thread.join()
 
 if __name__ == '__main__':
-    main()
-
+    curl()

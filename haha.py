@@ -1,0 +1,8 @@
+import json
+
+data = "{\"sentence\": \"\u4e8e\u5927\u5b9d\u7684\u8fdb\u7403\u5e2e\u52a9\u4e2d\u56fd\u961f\u5728\u957f\u6c99\u8d3a\u9f99\u4f53\u80b2\u4e2d\u5fc3\u4ee51-0\u7684\u6bd4\u5206\u83b7\u5f97\u80dc\u5229\"}"
+
+print(data)
+d = json.loads(data)
+
+print(d['sentence'])
